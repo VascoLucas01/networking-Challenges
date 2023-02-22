@@ -57,6 +57,7 @@ change_permissions() {
 
 
 
+#main
 
 questions=($'Give me the directory path you want to change the permissions! (press \"q\" to exit)\n>' 
         $'Give me the permissions number! (press \"q\" to exit)\n>')
@@ -77,7 +78,7 @@ for i in 0 1
 do 
 
         read -p  "${questions[i]}" ${variables[i]}
-        echo -e "$(date +'[%Y-%m-%d T %H:%M:%S]') $((i+1)) question and $((i+1)) responde performed\n" >> $log_file
+        echo -e "$(date +'[%Y-%m-%d T %H:%M:%S]') $((i+1)) question and $((i+1)) response performed\n" >> $log_file
         quit "${!variables[i]}"
 
 done
