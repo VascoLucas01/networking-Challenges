@@ -13,7 +13,7 @@ print("----------> First command : whoami")
 print(whoami_os)
 print("----------> Second command : ip a")
 print(ip_a_os)
-print("----------> Third command : whoami")
+print("----------> Third command : lshw -short")
 print(lshw_short_os)
 
 
@@ -26,9 +26,9 @@ lshw_short_subprocess = subprocess.run(["lshw","-short"],capture_output=True, te
 
 print("______________________ With module SUBPROCESS ______________________")
 print("----------> First command : whoami")
-print(whoami_os)
+print(whoami_subprocess.stdout)
 print("----------> Second command : ip a")
-print(ip_a_os)
-print("----------> Third command : whoami")
-print(lshw_short_os)
+print(ip_a_subprocess.stdout)
+print("----------> Third command : lshw -short")
+print(lshw_short_subprocess.stdout)
 
