@@ -7,18 +7,24 @@ import os
 # Declaration of variables
 
 ### Read user input here into a variable
+parent_dir = "."
+user_in = input("Enter the directory's name:")
+path = os.path.join(parent_dir,user_in)
+
+
 
 # Declaration of functions
-
+def create_directories()
 ### Declare a function here
 
-for (root, dirs, files) in os.walk("testdir"):
+for (root, dirs, files) in os.walk("user_in"):
     ### Add a print command here to print ==root==
     print(root)
     ### Add a print command here to print ==dirs==
     print(dirs)
     ### Add a print command here to print ==files==
     print(files)
+
 
 # Main
 
