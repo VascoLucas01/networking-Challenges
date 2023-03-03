@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+#Script : OpsChallenge06.sh
+#Purpose: Run bash command with modules os and subprocess provided by python
+#Why    : Quick understand of the differences between python and bash script
+
+
 import os
 import subprocess
 
