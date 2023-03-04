@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 # Import libraries
-
 import os
 
-# Declaration of variables
-
-
+#Script : OpsChallenge07.sh
+#Purpose: Practice one more time the methods of the os library
+#Why    : Understand how to create directories with os.makedirs() and 
+#         how to walk through dirs with os.walk()
 
 
 
