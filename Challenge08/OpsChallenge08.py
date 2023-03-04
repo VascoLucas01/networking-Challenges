@@ -16,21 +16,21 @@ for i in range(0,10):
  
 # print the fourth element of the list
 print("\nThe fourth element of the list: ")
-print("> ", list[4])
+print("> ", list[3])
 
 
 # assuming [ position 0 .. position 9 ]
 # print the last four elements
-print("\nThe last four elements of the list:")
-print("> ", list[6:10])
+print("\nThe last five elements of the list:")
+print("> ", list[5:10])
 
 # change the value of the seventh element to “onion”
 print("\nChange the value of the seventh element to \"onion\":")
 list[6] = "onion"
 
-print(list)
+print("> ", list)
 
-
+### Stretch Goals not done yet ###
 
  
 
