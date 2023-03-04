@@ -2,19 +2,18 @@
 
 #Script : OpsChallenge02.sh
 #Purpose: Make a backup of the log messages
-#Why    : To show some skills in file management 
+#Why    : To show some skills in file management
 
 
-filename="logMessages.BACKUP"
+filename="syslog.$(date +'[%d-%m-%Y_%H:%M:%S]')"
 
 
 # the script initial message
-echo -e "\n$(date +'[%Y-%m-%d T %H:%M:%S]') Script is starting...\n" 
+echo -e "\n$(date +'[%Y-%m-%d T %H:%M:%S]') Script is starting...\n"
 
 
 # make a backup of the log messages to the filename
-echo -e "\n\n$(journalctl --no-pager )" > $filename
-echo -e "\n\n$(date +'[%Y-%m-%d T %H:%M:%S]')" >> $filename 
+journalctl --no-pager | cp /dev/stdin $filename
 
 # print the message that tells the success of the backup
 echo -e "$(date +'[%Y-%m-%d T %H:%M:%S]') The backup was a success!"
