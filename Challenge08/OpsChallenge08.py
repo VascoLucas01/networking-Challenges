@@ -25,7 +25,7 @@ print("\nThe last four elements of the list:")
 print("> ", list[6:10])
 
 # change the value of the seventh element to “onion”
-print("\nChange the value of the seventh element to "onion":")
+print("\nChange the value of the seventh element to \"onion\":")
 list[6] = "onion"
 
 print(list)
