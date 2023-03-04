@@ -6,28 +6,72 @@ import os
 
 # Declaration of variables
 
-### Read user input here into a variable
-parent_dir = "."
-user_in = input("Enter the directory's name:")
-path = os.path.join(parent_dir,user_in)
 
 
 
-# Declaration of functions
-def create_directories()
-### Declare a function here
 
-for (root, dirs, files) in os.walk("user_in"):
-    ### Add a print command here to print ==root==
-    print(root)
-    ### Add a print command here to print ==dirs==
-    print(dirs)
-    ### Add a print command here to print ==files==
-    print(files)
+#Function name: create_directories
+#Purpose      : Takes a user input string
+#               Creates a directory named the string using os.makdirs function
+#               Create sub-directories within the directory named 'string_01', 'string_02', and 'string_03'     
+def create_directories():
+    
+    ### Directory's creation
+    ### Do not raise an error if the directory already exists 
+    os.makedirs(path,exist_ok=True)
+    
+    ### Sub-Directories' declaration
+    sub_directories = [f"{user_in}_01", f"{user_in}_02", f"{user_in}_03"]
+    
+    ### Sub-Directories' creation
+    for subdirs in sub_directories:
+        os.makedirs(f"{path}/{subdirs}",exist_ok=True)
+    
+ 
+#Function name: create_directories
+#Purpose      : Takes a user input string
+#               Creates a directory named the string using os.makdirs function
+#               Create sub-directories within the directory named 'string_01', 'string_02', and 'string_03'   
+def output_2_file(path):
+    with open("output.txt","a") as f:
+        for (root, dirs, files) in os.walk(path, topdown=True):
+            ### ==root==
+            f.write(root + "\n")
+            #print(root + "\n")
+            
+            
+            ### ==dirs==
+            for name in dirs:
+                f.write(os.path.join(root, name) + "\n")
+                #print(os.path.join(root,name) + "\n")
+
+            ### ==files==        
+            for name in files:
+                f.write(os.path.join(root, name) + "\n")
+                #print(os.path.join(root,name) + "\n")
+   
+            
+            
+
 
 
 # Main
 
+### Read user input here into a variable
+user_in = input("Enter the directory's name:")
+    
+### The directory will be created in the current directory
+parent_dir = "."
+path = os.path.join(parent_dir,user_in)    
+    
+    
+create_directories()
+
+output_2_file(path)
+
 ### Pass the variable into the function here
+
+########## It is also necessary to open the .txt file with Libre Office Writer ##########
+
 
 # End
