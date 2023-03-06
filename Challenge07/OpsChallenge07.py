@@ -72,6 +72,7 @@ output_2_file(path)
 ### Pass the variable into the function here
 
 ########## It is also necessary to open the .txt file with Libre Office Writer ##########
+##########        Need to review the openning of the library office            ##########
 
 
 # End
