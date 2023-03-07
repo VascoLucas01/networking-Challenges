@@ -19,13 +19,13 @@ while( not is_numeric ):
         print("\n--- > Incorrect input value! < --- Try again:")
     
 
-
 #if( int(input_value) > threshold_value ):
 #    print("\n\t> Is higher than the threshold value!")
 #elif( int(input_value) < threshold_value ):
 #    print("\n\t> Is lower than the threshold value!")
 #else:
 #    print("\n\t> Is equal to the threshold value!")
+    
     
 ### Stretch Goal ###
 if( int(input_value) > threshold_value and int(input_value) < 20 ):
