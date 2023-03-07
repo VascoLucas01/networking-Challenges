@@ -20,12 +20,23 @@ while( not is_numeric ):
     
 
 
-if( int(input_value) > threshold_value ):
-    print("\n\t> É maior!")
-elif( int(input_value) < threshold_value ):
-    print("\n\t> É menor!")
+#if( int(input_value) > threshold_value ):
+#    print("\n\t> Is higher than the threshold value!")
+#elif( int(input_value) < threshold_value ):
+#    print("\n\t> Is lower than the threshold value!")
+#else:
+#    print("\n\t> Is equal to the threshold value!")
+    
+### Stretch Goal ###
+if( int(input_value) > threshold_value and int(input_value) < 20 ):
+    print("\n\t> É higher than the threshold value and lower than 20!")
+# it is not efficient and does not make any sense, but it is just for demonstration
+elif( int(input_value) < threshold_value or int(input_value) > 100):
+    print("\n\t> Is lower than the threshold value or higher than 100!")
 else:
-    print("\n\t> É igual!")
+    pass
+
+
     
     
 
