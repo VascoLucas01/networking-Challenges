@@ -2,6 +2,8 @@
 
 #Script : OpsChallenge09.sh
 #Purpose: Practice python skills
-#Why    : Understand how to work with statement conditionals 
+#Why    : Understand how to work with conditional statements
+
+  
 
 
