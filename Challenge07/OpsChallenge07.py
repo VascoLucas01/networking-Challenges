@@ -2,8 +2,9 @@
 
 # Import libraries
 import os
+import subprocess
 
-#Script : OpsChallenge07.sh
+#Script : OpsChallenge07.py
 #Purpose: Practice one more time the methods of the os library
 #Why    : Understand how to create directories with os.makedirs() and 
 #         how to walk through dirs with os.walk()
@@ -74,5 +75,6 @@ output_2_file(path)
 ########## It is also necessary to open the .txt file with Libre Office Writer ##########
 ##########        Need to review the openning of the library office            ##########
 
+subprocess.run(["libreoffice", "--writer", "file_list.txt"])
 
 # End
