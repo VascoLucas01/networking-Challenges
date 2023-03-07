@@ -75,6 +75,6 @@ output_2_file(path)
 ########## It is also necessary to open the .txt file with Libre Office Writer ##########
 ##########        Need to review the openning of the library office            ##########
 
-subprocess.run(["libreoffice", "--writer", "file_list.txt"])
+subprocess.run(["libreoffice", "--view", "file_list.txt"])
 
 # End
