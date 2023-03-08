@@ -30,7 +30,7 @@ list[6] = "onion"
 
 print("> ", list)
 
-### Stretch Goals not done yet ###
+################################# Stretch Goals not done yet #################################
 
  
 
