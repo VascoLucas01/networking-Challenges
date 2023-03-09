@@ -32,6 +32,9 @@ print("> ", list)
 
 ################################# Stretch Goals not done yet #################################
 
- 
+### Creation of a tuple
+# a tuple tuple is an ordered, immutable collection of objects. 
+# Tuples are similar to lists, but they cannot be modified once created.
+tuple = (1,2,3)
 
 
