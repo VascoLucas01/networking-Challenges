@@ -33,8 +33,23 @@ print("> ", list)
 ################################# Stretch Goals not done yet #################################
 
 ### Creation of a tuple
-# a tuple tuple is an ordered, immutable collection of objects. 
+# A tuple is an ordered, immutable collection of objects. 
 # Tuples are similar to lists, but they cannot be modified once created.
 tuple = (1,2,3)
 
+### Creation of a set
+# A set is an unordered collection of unique elements. 
+# Sets are similar to lists or tuples, but they do not contain any duplicate elements.
+set = {1,2,3,4,4,4}
+
+# output = {1,2,3,4} -> because it is unordered
+print(set)   
+
+# remove the element 4
+set.remove(4)
+
+# output = {1,2,3}
+print(set)
+
+### Creation of a dictionary
 
