@@ -52,4 +52,12 @@ set.remove(4)
 print(set)
 
 ### Creation of a dictionary
+# A dictionary is a collection of key-value pairs that are unordered, changeable, and indexed.
+dictionary = {"Cristiano" : "Ronaldo", "Sergio": "Ramos", "Diogo": "Costa"}
 
+# print dictionary
+print(dictionary)
+
+# store the value associated with the name "Cristiano"
+last_name_Cristiano = dictionary["Cristiano"]
+print(last_name_Cristiano)
