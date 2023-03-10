@@ -23,8 +23,25 @@ print("\n____________First Line____________")
 print(first_line)
 
 # close the file
-file.close()
+#file.close()
 
+
+### Stretch Goal ###
+file = open("config-pfSense.home.arpa-20230309233846.xml","r+")
+
+
+content = file.read()
+content = content.replace("Vasco Lucas","Vasco Coelho de Melo Gouveia Lucas")
+
+# the file pointer is pointing to the end of the file and this is not what we want
+file.seek(0)
+
+file.write(content)
+
+# because the file is shorter, it is necessary to remove any leftover data from the end of the file
+file.truncate()
+
+file.close()
 
 
 # content = subprocess.run(["cat","tmp.txt"],capture_output=True, text=True)
@@ -32,4 +49,6 @@ file.close()
 
 # removes the file
 subprocess.run(["rm","tmp.txt"],capture_output=True, text=True)
+
+
 
