@@ -31,7 +31,7 @@ file = open("config-pfSense.home.arpa-20230309233846.xml","r+")
 
 
 content = file.read()
-content = content.replace("Vasco Lucas","Vasco Coelho de Melo Gouveia Lucas")
+content = content.replace("Vasco Coelho de Melo Gouveia Lucas","Vasco Lucas")
 
 # the file pointer is pointing to the end of the file and this is not what we want
 file.seek(0)
