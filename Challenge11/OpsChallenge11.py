@@ -38,3 +38,6 @@ print("__________________Time spent running a virtual CPU for guest operating sy
 print("\t> ",guest)
 print("__________________All in a tuple__________________")
 print(cpu_times)
+
+### Stretch Goal ###
+# not done yet
