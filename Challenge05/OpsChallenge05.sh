@@ -8,6 +8,15 @@
 #Purpose: Not removing log files from the system, but just clearing it.
 #Why    : To understand the importance of clearing log files.
 
+################################# IMPORTANT NOTE #################################
+### Clearing the tracks is the final stage of penetration testing process
+### Clearing trancks essencially involves clearing all the activity of an attacker
+### From the attackers' perspective: he/she usually needs to evade detection
+# if there is an intrusion detection system. Therefore preventing any incident
+# response, he/she needs to clear the logs or back doors that can be discovered 
+# by forensics team
+##################################################################################
+
 
 log_files=("syslog  file: " "wtmp    file: "  "authlog file: " "boot 1  file: " "boot 2  file: " "kernel  file: ")  
 log_files_path=("/var/log/syslog" "/var/log/wtmp" "/var/log/auth.log" "/var/log/boot.log.1" "/var/log/boot.log.2" "/var/log/kern.log")
