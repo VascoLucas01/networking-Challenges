@@ -17,7 +17,6 @@
 # by forensics team
 ##################################################################################
 
-
 log_files=("syslog  file: " "wtmp    file: "  "authlog file: " "boot 1  file: " "boot 2  file: " "kernel  file: ")  
 log_files_path=("/var/log/syslog" "/var/log/wtmp" "/var/log/auth.log" "/var/log/boot.log.1" "/var/log/boot.log.2" "/var/log/kern.log")
 zip_log_files_path=("/var/log/backups/syslog-" "/var/log/backups/wtmp-" "/var/log/backups/auth.log-" "/var/log/backups/boot.log.1-"
