@@ -26,9 +26,6 @@ cpu_times = psutil.cpu_times()
 
 j = 0;
 for i in info:
-    #print(i)
-    #print(cpu_times[j])
-    #print("")
     subprocess.run(f'echo "{i}" >> info.txt', shell=True)
     subprocess.run(f'echo "{cpu_times[j]}" >> info.txt', shell=True)
     subprocess.run(f'echo "" >> info.txt', shell=True)
@@ -36,43 +33,5 @@ for i in info:
 
 subprocess.run(f'echo "> All in a tuple" >> info.txt', shell=True)
 subprocess.run(f'echo "{cpu_times}" >> info.txt', shell=True)
-
-exit(0)   
-#print("> All in a tuple")
-#print(cpu_times)
-
-exit(0)
-    
-user      = cpu_times[0]
-nice      = cpu_times[1]
-system    = cpu_times[2]
-idle      = cpu_times[3]
-iowait    = cpu_times[4]
-irq       = cpu_times[5]
-softirq   = cpu_times[6]
-steal     = cpu_times[7]
-guest     = cpu_times[8]
-
-
-
-print("\t> ",user)
-
-print("\t> ",system)
-
-print("\t> ",idle)
-
-print("\t> ",nice)
-
-print("\t> ",iowait)
-
-print("\t> ",irq)
-
-print("\t> ",softirq)
-
-print("\t> ",steal)
-
-print("\t> ",guest)
-
-print(cpu_times)
 
 ### Stretch Goal ###
