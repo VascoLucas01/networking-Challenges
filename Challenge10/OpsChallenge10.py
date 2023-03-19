@@ -44,14 +44,8 @@ file.truncate()
 file.close()
 
 
-# content = subprocess.run(["cat","tmp.txt"],capture_output=True, text=True)
-#print(content.stdout)
-
 # removes the file
 subprocess.run(["rm","tmp.txt"],capture_output=True, text=True)
 
-### ---------------------------------------------------------------------- ###
-################## it is necessary to import the file again ##################
-### ---------------------------------------------------------------------- ###
 
 
