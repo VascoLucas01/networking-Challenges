@@ -53,5 +53,8 @@ if(confirmation == "y"):
 else:
     print("\nTerminating script...")
     exit(0)
+    
+    
+#### Stretch goal not done yet ####
 
         
