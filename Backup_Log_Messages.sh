@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 
 #Script : Backup_Log_Messages.sh
-#Purpose: Make a backup of the log messages
+#Purpose: Copies /var/log/syslog to the current working directory
+######### Appends the current date and time to the filename
 #Why    : To show some skills in file management
 
 
