@@ -1,7 +1,0 @@
-./root_dirs_files
-./root_dirs_files/root_dirs_files_03
-./root_dirs_files/root_dirs_files_01
-./root_dirs_files/root_dirs_files_02
-./root_dirs_files/root_dirs_files_03
-./root_dirs_files/root_dirs_files_01
-./root_dirs_files/root_dirs_files_02
