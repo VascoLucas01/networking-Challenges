@@ -1,4 +1,4 @@
-!/usr/bin/bash
+#!/usr/bin/bash
 
 #Script : Conditionals_in_Menu_Systems.sh
 #Purpose: Create a bash script that launches a menu system with the following options:
