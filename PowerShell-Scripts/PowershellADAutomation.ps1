@@ -1,4 +1,4 @@
-#Script : Powershell_AD_Automation.ps1
+#Script : PowershellADAutomation.ps1
 #Purpose: Write a Powershell script that adds the below person to AD.
 ######### Franz Ferdinand is the TPS Reporting Lead at GlobeX USA in Springfield, OR office. Franz is part of the TPS Department. Franz’s email is ferdi@GlobeXpower.com.
 #Why    : 
