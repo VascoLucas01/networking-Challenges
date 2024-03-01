@@ -4,7 +4,7 @@
 import os
 import subprocess
 
-#Script : Directory_Creation.py
+#Script : DirectoryCreation.py
 #Purpose: Script must ask the user for a file path and read a user input string into a variable.
 ######### Script must use the os.walk() function from the os library.
 ######### Script must enclose the os.walk() function within a python function that hands it the user input file path.
