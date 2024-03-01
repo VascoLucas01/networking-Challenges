@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-#Script : Bash_in_Python.py
+#Script : BashInPython.py
 #Purpose: Run bash command with modules os and subprocess provided by python
 ######### The Python module “os” must be utilized
 ######### At least three variables must be declared in Python that contain results of bash operations
